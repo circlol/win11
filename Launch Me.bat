@@ -7,7 +7,7 @@
 	echo.>> %LOGFILE% && echo SCRIPT RUN INITIATED>> %LOGFILE% && echo SCRIPT RUN INITIATED>> %ERROR%
 	time /t && time /t >> %LOGFILE% && time /t >> %ERROR%
 	date /t && date /t >> %LOGFILE% && date /t >> %ERROR%
-	echo. && echo ================================================================================&& echo. && echo New Load Utiliy for Windows 10&& echo Created by Mike Ivison&& echo. && echo It is recommend to run Windows Updates BEFORE running this script as Windows may revert some of our changes.&& echo. && echo ================================================================================&& echo. && title New Loads Utility - Mother Computers - Created by Mike Ivison
+	echo. && echo ================================================================================&& echo. && echo New Load Utiliy for Windows 11&& echo Created by Mike Ivison&& echo. && echo It is recommend to run Windows Updates BEFORE running this script as Windows may revert some of our changes.&& echo. && echo ================================================================================&& echo. && title New Loads Utility - Mother Computers - Created by Mike Ivison
   	timeout 3 > NUL
 	goto programs
 
@@ -153,7 +153,7 @@
     explorer .\
 	timeout 3 > NUL
 	start https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
-	if exist "%PUBLIC%\VLC Media Player.lnk" ( del "%PUBLIC%\Desktop\VLC Media Player.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
+	if exist "%PUBLIC%\Desktop\VLC Media Player.lnk" ( del "%PUBLIC%\Desktop\VLC Media Player.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
     if exist "%PUBLIC%\Desktop\Adobe Acrobat DC.lnk" ( del "%PUBLIC%\Desktop\Adobe Acrobat DC.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
 	goto exit
 
